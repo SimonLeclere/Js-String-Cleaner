@@ -1,0 +1,19 @@
+{
+  "name": "js-string-cleaner",
+  "version": "1.0.0",
+  "description": "A simple npm module to replace special characters in a string with unicode letters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonLeclere/Js-String-Cleaner.git"
+  },
+  "author": "Simon Leclère",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonLeclere/Js-String-Cleaner/issues"
+  },
+  "homepage": "https://github.com/SimonLeclere/Js-String-Cleaner#readme"
+}
