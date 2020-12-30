@@ -46,7 +46,9 @@ clean(txt, { capitalizeAllWords }); // Simon Leclere#5765
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SimonLeclere/Js-String-Cleaner/issues). You can also take a look at the [contributing guide](https://github.com/SimonLeclere/Js-String-Cleaner/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SimonLeclere/Js-String-Cleaner/issues).
+<br><br>
+PS: If you want to add new characters, don't hesitate to make a pull request or to contact me on Discord : `sιмση ℓεcℓεяε#5765`.
 
 ## Show your support
 
