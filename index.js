@@ -13,6 +13,7 @@ function clean(txt, options) {
     const results = [...txt]
         .map(char => characters[char] || char)
         .join('')
+        .trim();
     
     return capitalizeAllWords ? upperAllWords(results) : capitalizeFirstLetter ? upper(results) : results;
 }
