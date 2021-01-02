@@ -35,7 +35,7 @@ clean(txt); // simon leclere#5765
 
 clean(txt, { capitalizeFirstLetter: true }); // Simon leclere#5765
 
-clean(txt, { capitalizeAllWords }); // Simon Leclere#5765
+clean(txt, { capitalizeAllWords: true }); // Simon Leclere#5765
 ```
 
 ## Author
