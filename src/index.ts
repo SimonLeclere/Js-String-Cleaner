@@ -1,8 +1,8 @@
-const characters = require('../characters');
+import characters from '../characters.json';
 
-const upper = (string: string): string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-const upperAllWords = (string: string) =>
-  string
+const upper = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+const upperAllWords = (str: string) =>
+  str
     .split(' ')
     .map((word) => upper(word))
     .join(' ');
@@ -12,9 +12,8 @@ interface Options {
   capitalizeAllWords?: boolean;
 }
 
-
 /**
- * Replace special characters in a string with unicode letters. 
+ * Replace special characters in a string with unicode letters.
  * @param {String} txt A string to clean
  * @param {Options} options An object containing two optionnal parameters : capitalizeFirstLetter and capitalizeAllWords
  * @returns {String} The cleaned string

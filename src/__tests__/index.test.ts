@@ -5,9 +5,9 @@ test('clean default', () => {
 });
 
 test('clean capitalizeFirstLetter', () => {
-    expect(clean('sιмση ℓεcℓεяε', { capitalizeFirstLetter: true })).toBe('Simon leclere');
+  expect(clean('sιмση ℓεcℓεяε', { capitalizeFirstLetter: true })).toBe('Simon leclere');
 });
 
 test('clean capitalizeAllWords', () => {
-    expect(clean('sιмση ℓεcℓεяε', { capitalizeAllWords: true })).toBe('Simon Leclere');
+  expect(clean('sιмση ℓεcℓεяε', { capitalizeAllWords: true })).toBe('Simon Leclere');
 });
