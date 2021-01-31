@@ -1,14 +1,12 @@
 {
   "name": "js-string-cleaner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple npm module to replace special characters in a string with unicode letters.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-
   "files": [
     "lib/**/*"
   ],
-
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
