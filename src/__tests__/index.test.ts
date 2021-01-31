@@ -1,7 +1,7 @@
 import clean = require('../index');
 
 test('clean default', () => {
-  expect(clean('sιмση ℓεcℓεяε')).toBe('sIMON LecLeRe');
+  expect(clean('sιмση ℓεcℓεяε')).toBe('sIMoN LecLeRe');
 });
 
 test('clean capitalizeFirstLetter', () => {
