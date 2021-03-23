@@ -10,6 +10,7 @@ const upperAllWords = (str: string) =>
 interface Options {
   capitalizeFirstLetter?: boolean;
   capitalizeAllWords?: boolean;
+  keepUnrecognized?: boolean;
 }
 
 /**
@@ -36,9 +37,17 @@ function clean(txt: string, options?: Options) {
     typeof options.capitalizeAllWords === 'boolean'
       ? options.capitalizeAllWords
       : false;
+  
+  const keepUnrecognized =
+    options &&
+    typeof options === 'object' &&
+    options.keepUnrecognized &&
+    typeof options.keepUnrecognized === 'boolean'
+      ? options.keepUnrecognized
+      : false;
 
   const results = [...txt]
-    .map((char) => characters[char] || char)
+    .map((char) => characters[char] ? characters[char] : (keepUnrecognized ? char : ''))
     .join('')
     .trim();
 
