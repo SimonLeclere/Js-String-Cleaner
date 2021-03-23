@@ -37,17 +37,14 @@ function clean(txt: string, options?: Options) {
     typeof options.capitalizeAllWords === 'boolean'
       ? options.capitalizeAllWords
       : false;
-  
+
   const keepUnrecognized =
-    options &&
-    typeof options === 'object' &&
-    options.keepUnrecognized &&
-    typeof options.keepUnrecognized === 'boolean'
+    options && typeof options === 'object' && options.keepUnrecognized && typeof options.keepUnrecognized === 'boolean'
       ? options.keepUnrecognized
       : false;
 
   const results = [...txt]
-    .map((char) => characters[char] ? characters[char] : (keepUnrecognized ? char : ''))
+    .map((char) => (characters[char] ? characters[char] : keepUnrecognized ? char : ''))
     .join('')
     .trim();
 
