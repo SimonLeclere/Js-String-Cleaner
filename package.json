@@ -1,6 +1,6 @@
 {
   "name": "js-string-cleaner",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A simple npm module to replace special characters in a string with unicode letters.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
