@@ -13,9 +13,9 @@ test('clean capitalizeAllWords', () => {
 });
 
 test('alphabet lowercase', () => {
-  expect(clean('abcdefghijklmnopqrstuvwxyz')).toBe('abcdefghijklmnopqrstuvwxyz')
-})
+  expect(clean('abcdefghijklmnopqrstuvwxyz')).toBe('abcdefghijklmnopqrstuvwxyz');
+});
 
 test('alphabet uppercase', () => {
-  expect(clean('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-})
+  expect(clean('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+});
