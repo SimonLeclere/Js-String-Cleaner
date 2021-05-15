@@ -11,3 +11,11 @@ test('clean capitalizeFirstLetter', () => {
 test('clean capitalizeAllWords', () => {
   expect(clean('sιмση ℓεcℓεяε', { capitalizeAllWords: true })).toBe('Simon Leclere');
 });
+
+test('alphabet lowercase', () => {
+  expect(clean('abcdefghijklmnopqrstuvwxyz')).toBe('abcdefghijklmnopqrstuvwxyz')
+})
+
+test('alphabet uppercase', () => {
+  expect(clean('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+})
