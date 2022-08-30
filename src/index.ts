@@ -22,29 +22,12 @@ interface Options {
 function clean(txt: string, options?: Options) {
   if (typeof txt !== 'string') throw new Error('Parameter txt must be a string !');
 
-  const capitalizeFirstLetter =
-    options &&
-    typeof options === 'object' &&
-    options.capitalizeFirstLetter &&
-    typeof options.capitalizeFirstLetter === 'boolean'
-      ? options.capitalizeFirstLetter
-      : false;
-
-  const capitalizeAllWords =
-    options &&
-    typeof options === 'object' &&
-    options.capitalizeAllWords &&
-    typeof options.capitalizeAllWords === 'boolean'
-      ? options.capitalizeAllWords
-      : false;
-
-  const keepUnrecognized =
-    options && typeof options === 'object' && options.keepUnrecognized && typeof options.keepUnrecognized === 'boolean'
-      ? options.keepUnrecognized
-      : false;
+  const capitalizeFirstLetter = options && options.capitalizeFirstLetter;
+  const capitalizeAllWords = options && options.capitalizeAllWords;
+  const keepUnrecognized = options && options.keepUnrecognized;
 
   const results = [...txt]
-    .map((char) => (characters[char] ? characters[char] : keepUnrecognized ? char : ''))
+    .map((char) => characters[char] || (keepUnrecognized ? char : ''))
     .join('')
     .trim();
 
